@@ -1,0 +1,49 @@
+.global-header {
+    width: 1011px;
+    background: #fff;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 17px;
+}
+
+.global-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 36px;
+}
+
+.menu-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Arial;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-item.has-child a:after {
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    height: 5px;
+    width: 5px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-top: -2px;
+}
